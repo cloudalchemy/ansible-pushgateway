@@ -6,7 +6,6 @@
       state: directory
       owner: "root"
       group: "root"
-      recurse: true
       mode: 0755
 
   - name: Create persistence file
@@ -16,6 +15,8 @@
       owner: "{{ pushgateway_system_user }}"
       group: "{{ pushgateway_system_group }}"
       mode: 0640
+    register: touch_log
+    changed_when: touch_log.diff.before.state != "file"  # Needed for idempotance (https://github.com/ansible/ansible/issues/30226)
   when: pushgateway_persistence
 
 - name: Allow pushgateway port in SELinux on RedHat OS family

@@ -1,5 +1,3 @@
-<p><img src="https://www.circonus.com/wp-content/uploads/2015/03/sol-icon-itOps.png" alt="graph logo" title="graph" align="right" height="60" /></p>
-
 # Ansible Role: pushgateway
 
 [![Build Status](https://travis-ci.org/cloudalchemy/ansible-pushgateway.svg?branch=master)](https://travis-ci.org/cloudalchemy/ansible-pushgateway)
@@ -22,8 +20,8 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
-| `pushgateway_version` | 0.16.0 | Node exporter package version |
-| `pushgateway_web_listen_address` | "0.0.0.0:9100" | Address on which node exporter will listen |
+| `pushgateway_version` | 0.5.2 | Node exporter package version |
+| `pushgateway_web_listen_address` | "0.0.0.0:9091" | Address on which node exporter will listen |
 | `pushgateway_persistence` | true | Enable persistence file |
 | `pushgateway_config_flags_extra` | {} | Additional configuration flags passed at startup to pushgateway binary |
 
