@@ -1,0 +1,63 @@
+---
+- name: Install dependencies
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ pushgateway_dependencies }}"
+
+- name: Create the pushgateway group
+  group:
+    name: "{{ pushgateway_system_group }}"
+    state: present
+    system: true
+
+- name: Create the pushgateway user
+  user:
+    name: "{{ pushgateway_system_user }}"
+    groups: "{{ pushgateway_system_group }}"
+    append: true
+    shell: /usr/sbin/nologin
+    system: true
+    createhome: false
+    home: /
+
+- name: Download pushgateway binary to local folder
+  become: false
+  get_url:
+    url: "https://github.com/prometheus/pushgateway/releases/download/v{{ pushgateway_version }}/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
+    dest: "/tmp/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
+    checksum: "sha256:{{ pushgateway_checksum }}"
+  register: _download_binary
+  until: _download_binary is succeeded
+  retries: 5
+  delay: 2
+  delegate_to: localhost
+  check_mode: false
+
+- name: Unpack pushgateway binary
+  become: false
+  unarchive:
+    src: "/tmp/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
+    dest: "/tmp"
+    creates: "/tmp/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}/pushgateway"
+  delegate_to: localhost
+  check_mode: false
+
+- name: Propagate pushgateway binaries
+  copy:
+    src: "/tmp/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}/pushgateway"
+    dest: "/usr/local/bin/pushgateway"
+    mode: 0750
+    owner: "{{ pushgateway_system_user }}"
+    group: "{{ pushgateway_system_group }}"
+  notify: restart pushgateway
+  when: not ansible_check_mode
+
+- name: Copy the pushgateway systemd service file
+  template:
+    src: pushgateway.service.j2
+    dest: /etc/systemd/system/pushgateway.service
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart pushgateway

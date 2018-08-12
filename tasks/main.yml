@@ -1,0 +1,30 @@
+---
+- name: Gather variables for each operating system
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_distribution | lower }}.yml"
+    - "{{ ansible_os_family | lower }}.yml"
+  tags:
+    - always
+
+- import_tasks: preflight.yml
+  tags:
+    - always
+
+- import_tasks: install.yml
+  become: true
+  tags:
+    - install
+
+- import_tasks: configure.yml
+  become: true
+  tags:
+    - configure
+
+- name: Ensure pushgateway is enabled on boot
+  become: true
+  systemd:
+    name: pushgateway
+    enabled: true
+  tags:
+    - run

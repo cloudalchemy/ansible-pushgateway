@@ -1,0 +1,46 @@
+{{ ansible_managed | comment}}
+
+[Unit]
+Description=Prometheus pushgateway
+After=network.target
+
+[Service]
+Type=simple
+User={{ pushgateway_system_user }}
+Group={{ pushgateway_system_group }}
+ExecStart=/usr/local/bin/pushgateway \
+{% if pushgateway_persistence %}
+  --persistance.file="{{ pushgateway_persistence_dir }}/persistence" \
+{% endif %}
+  --web.listen-address={{ pushgateway_web_listen_address }}{% for flag, flag_value in pushgateway_config_flags_extra.items() %}\
+  --{{ flag }}{% if flag_value %}={{ flag_value }}{% endif %} {% endfor %}
+
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+NoNewPrivileges=true
+{% if pushgateway_persistence %}
+{%   if pushgateway_systemd_version.stdout | int >= 231 %}
+ReadWritePaths={{ pushgateway_persistence_dir }}
+{%   else %}
+ReadWriteDirectories={{ pushgateway_persistence_dir }}
+{%   endif %}
+{% endif %}
+{% if pushgateway_systemd_version.stdout | int >= 232 %}
+ProtectSystem=strict
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+{% else %}
+ProtectSystem=full
+{% endif %}
+
+{% if http_proxy is defined %}
+Environment="HTTP_PROXY={{ http_proxy }}"{% if https_proxy is defined %} "HTTPS_PROXY={{ https_proxy }}{% endif %}"
+{% endif %}
+
+SyslogIdentifier=pushgateway
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

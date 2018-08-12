@@ -1,0 +1,10 @@
+---
+- name: Run role
+  hosts: all
+  any_errors_fatal: true
+  roles:
+    - ansible-pushgateway
+  vars:
+    pushgateway_version: latest
+    pushgateway_web_listen_address: "127.0.0.1:9091"
+    pushgateway_persistence: false

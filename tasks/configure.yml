@@ -1,0 +1,29 @@
+---
+- block:
+  - name: Create persistence file dir
+    file:
+      path: "{{ pushgateway_persistence_dir }}"
+      state: directory
+      owner: "root"
+      group: "root"
+      recurse: true
+      mode: 0755
+
+  - name: Create persistence file
+    file:
+      path: "{{ pushgateway_persistence_dir }}/persistence"
+      state: touch
+      owner: "{{ pushgateway_system_user }}"
+      group: "{{ pushgateway_system_group }}"
+      mode: 0640
+  when: pushgateway_persistence
+
+- name: Allow pushgateway port in SELinux on RedHat OS family
+  seport:
+    ports: "{{ pushgateway_web_listen_address.split(':')[1] }}"
+    proto: tcp
+    setype: http_port_t
+    state: present
+  when:
+    - ansible_version.full is version_compare('2.4', '>=')
+    - ansible_selinux.status == "enabled"

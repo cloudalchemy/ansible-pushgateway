@@ -1,0 +1,9 @@
+---
+pushgateway_version: 0.5.2
+pushgateway_web_listen_address: "0.0.0.0:9091"
+
+pushgateway_persistence: true
+
+pushgateway_config_flags_extra: {}
+# pushgateway_config_flags_extra:
+#   persistence.interval: '5m'
