@@ -1,6 +1,6 @@
 # Ansible Role: pushgateway
 
-[![Build Status](https://travis-ci.org/cloudalchemy/ansible-pushgateway.svg?branch=master)](https://travis-ci.org/cloudalchemy/ansible-pushgateway)
+[![Build Status](https://travis-ci.com/cloudalchemy/ansible-pushgateway.svg?branch=master)](https://travis-ci.com/cloudalchemy/ansible-pushgateway)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.pushgateway-blue.svg)](https://galaxy.ansible.com/cloudalchemy/pushgateway/)
 [![GitHub tag](https://img.shields.io/github/tag/cloudalchemy/ansible-pushgateway.svg)](https://github.com/cloudalchemy/ansible-pushgateway/tags)
