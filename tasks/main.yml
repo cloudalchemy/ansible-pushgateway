@@ -24,6 +24,7 @@
 - name: Ensure pushgateway is enabled on boot
   become: true
   systemd:
+    daemon_reload: true
     name: pushgateway
     enabled: true
   tags:
