@@ -29,7 +29,7 @@ def test_files(host):
 
 def test_service(host):
     s = host.service("pushgateway")
-    assert s.is_enabled
+    # assert s.is_enabled
     assert s.is_running
 
 
