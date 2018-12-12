@@ -1,9 +1,9 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
-
+## [0.0.3](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2018-12-12)
 **Merged pull requests:**
 
+- New pushgateway upstream release! [\#3](https://github.com/cloudalchemy/ansible-pushgateway/pull/3) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - New pushgateway upstream release! [\#2](https://github.com/cloudalchemy/ansible-pushgateway/pull/2) ([cloudalchemybot](https://github.com/cloudalchemybot))
 
 ## [0.0.2](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2018-09-06)
