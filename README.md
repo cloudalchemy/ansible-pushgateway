@@ -12,7 +12,7 @@ Deploy prometheus [pushgateway](https://github.com/prometheus/pushgateway) using
 
 ## Requirements
 
-- Ansible >= 2.4
+- Ansible >= 2.3 (It might work on previous versions, but we cannot guarantee it)
 
 ## Role Variables
 
