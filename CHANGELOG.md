@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.4](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-01-03)
+**Merged pull requests:**
+
+- move to ansible 2.7 [\#1](https://github.com/cloudalchemy/ansible-pushgateway/pull/1) ([paulfantom](https://github.com/paulfantom))
+
 ## [0.0.3](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2018-12-12)
 **Merged pull requests:**
 
