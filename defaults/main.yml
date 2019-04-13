@@ -1,5 +1,5 @@
 ---
-pushgateway_version: 0.7.0
+pushgateway_version: 0.8.0
 pushgateway_web_listen_address: "0.0.0.0:9091"
 
 pushgateway_persistence: true
