@@ -1,10 +1,10 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
-
+## [0.0.5](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-05-04)
 **Merged pull requests:**
 
 - Synchronize files from cloudalchemy/skeleton [\#6](https://github.com/cloudalchemy/ansible-pushgateway/pull/6) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Wait for network to be online [\#5](https://github.com/cloudalchemy/ansible-pushgateway/pull/5) ([paulfantom](https://github.com/paulfantom))
 - New prometheus/pushgateway upstream release! [\#4](https://github.com/cloudalchemy/ansible-pushgateway/pull/4) ([cloudalchemybot](https://github.com/cloudalchemybot))
 
 ## [0.0.4](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-01-03)
