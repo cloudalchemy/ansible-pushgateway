@@ -12,6 +12,9 @@ ExecStart=/usr/local/bin/pushgateway \
 {% if pushgateway_persistence %}
   --persistence.file="{{ pushgateway_persistence_dir }}/persistence" \
 {% endif %}
+{% if prometheus_web_external_url %}
+  --web.external-url="{{ pushgateway_web_external_url }}" \
+{% endif %}
   --web.listen-address={{ pushgateway_web_listen_address }}{% for flag, flag_value in pushgateway_config_flags_extra.items() %}\
   --{{ flag }}{% if flag_value %}={{ flag_value }}{% endif %} {% endfor %}
 
