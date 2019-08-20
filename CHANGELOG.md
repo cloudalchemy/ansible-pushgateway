@@ -4,6 +4,7 @@
 
 **Merged pull requests:**
 
+- added restartsec and startlimitinterval configurations [\#12](https://github.com/cloudalchemy/ansible-pushgateway/pull/12) ([oguzhaninan](https://github.com/oguzhaninan))
 - Synchronize files from cloudalchemy/skeleton [\#11](https://github.com/cloudalchemy/ansible-pushgateway/pull/11) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - add pushgateway\_web\_external\_url option [\#10](https://github.com/cloudalchemy/ansible-pushgateway/pull/10) ([Nayls](https://github.com/Nayls))
 - New prometheus/pushgateway upstream release! [\#8](https://github.com/cloudalchemy/ansible-pushgateway/pull/8) ([cloudalchemybot](https://github.com/cloudalchemybot))
