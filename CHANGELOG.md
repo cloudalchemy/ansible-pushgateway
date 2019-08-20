@@ -4,6 +4,7 @@
 
 **Merged pull requests:**
 
+- Moving to python 3 and dropping support for python 2.x \(on deployer host\) [\#14](https://github.com/cloudalchemy/ansible-pushgateway/pull/14) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - added restartsec and startlimitinterval configurations [\#12](https://github.com/cloudalchemy/ansible-pushgateway/pull/12) ([oguzhaninan](https://github.com/oguzhaninan))
 - Synchronize files from cloudalchemy/skeleton [\#11](https://github.com/cloudalchemy/ansible-pushgateway/pull/11) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - add pushgateway\_web\_external\_url option [\#10](https://github.com/cloudalchemy/ansible-pushgateway/pull/10) ([Nayls](https://github.com/Nayls))
