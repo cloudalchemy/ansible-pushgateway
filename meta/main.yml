@@ -2,10 +2,10 @@
 galaxy_info:
   author: Pawel Krupa
   description: Prometheus Pushgateway
+  role_name: pushgateway
   license: MIT
   company: none
-  min_ansible_version: 2.5
-  role_name: pushgateway
+  min_ansible_version: 2.6
   platforms:
     - name: Ubuntu
       versions:
@@ -20,7 +20,7 @@ galaxy_info:
         - 7
     - name: Fedora
       versions:
-        - 27
+        - 30
   galaxy_tags:
     - monitoring
     - prometheus
