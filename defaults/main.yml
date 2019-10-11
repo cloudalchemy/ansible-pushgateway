@@ -1,5 +1,5 @@
 ---
-pushgateway_version: 0.9.1
+pushgateway_version: 0.10.0
 pushgateway_web_listen_address: "0.0.0.0:9091"
 pushgateway_web_external_url: ""
 
