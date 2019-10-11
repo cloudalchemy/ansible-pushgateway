@@ -1,9 +1,9 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
-
+## [0.1.0](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-10-11)
 **Merged pull requests:**
 
+- New prometheus/pushgateway upstream release! [\#17](https://github.com/cloudalchemy/ansible-pushgateway/pull/17) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - Synchronize files from cloudalchemy/skeleton [\#16](https://github.com/cloudalchemy/ansible-pushgateway/pull/16) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - Moving to python 3 and dropping support for python 2.x \(on deployer host\) [\#14](https://github.com/cloudalchemy/ansible-pushgateway/pull/14) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - added restartsec and startlimitinterval configurations [\#12](https://github.com/cloudalchemy/ansible-pushgateway/pull/12) ([oguzhaninan](https://github.com/oguzhaninan))
