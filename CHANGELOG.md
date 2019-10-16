@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.2.0](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-10-16)
+**Merged pull requests:**
+
+- New prometheus/pushgateway upstream release! [\#18](https://github.com/cloudalchemy/ansible-pushgateway/pull/18) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
 ## [0.1.0](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-10-11)
 **Merged pull requests:**
 
