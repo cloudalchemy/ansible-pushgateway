@@ -1,5 +1,11 @@
 # Change Log
 
+## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
+
+**Merged pull requests:**
+
+- \[REPO SYNC\] add support for CentOS8 [\#19](https://github.com/cloudalchemy/ansible-pushgateway/pull/19) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
 ## [0.2.0](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-10-16)
 **Merged pull requests:**
 
