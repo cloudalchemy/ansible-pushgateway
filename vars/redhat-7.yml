@@ -1,0 +1,4 @@
+---
+pushgateway_dependencies:
+  - libselinux-python
+  - policycoreutils-python
