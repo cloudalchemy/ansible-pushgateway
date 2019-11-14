@@ -4,6 +4,7 @@
 
 **Merged pull requests:**
 
+- \[REPO SYNC\] molecule: use CI images from quay.io instead of dockerhub [\#21](https://github.com/cloudalchemy/ansible-pushgateway/pull/21) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] Update releaser.sh [\#20](https://github.com/cloudalchemy/ansible-pushgateway/pull/20) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] add support for CentOS8 [\#19](https://github.com/cloudalchemy/ansible-pushgateway/pull/19) ([cloudalchemybot](https://github.com/cloudalchemybot))
 
