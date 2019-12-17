@@ -20,8 +20,8 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
-| `pushgateway_version` | 1.0.0 | Node exporter package version |
-| `pushgateway_web_listen_address` | "0.0.0.0:9091" | Address on which node exporter will listen |
+| `pushgateway_version` | 1.0.0 | Pushgateway package version |
+| `pushgateway_web_listen_address` | "0.0.0.0:9091" | Address on which pushgateway will listen |
 | `pushgateway_web_external_url` | "" | External address on which pushgateway is available. Useful when behind reverse proxy. Ex. http://example.org/pushgateway |
 | `pushgateway_persistence` | true | Enable persistence file |
 | `pushgateway_config_flags_extra` | {} | Additional configuration flags passed at startup to pushgateway binary |
