@@ -5,6 +5,7 @@
 **Merged pull requests:**
 
 - \[REPO SYNC\] remove IRC link [\#26](https://github.com/cloudalchemy/ansible-pushgateway/pull/26) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Replace node exporter by pushgateway in readme [\#25](https://github.com/cloudalchemy/ansible-pushgateway/pull/25) ([notFloran](https://github.com/notFloran))
 - \[REPO SYNC\] add declarative label sync; add autolabelling PRs [\#23](https://github.com/cloudalchemy/ansible-pushgateway/pull/23) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] molecule: use CI images from quay.io instead of dockerhub [\#21](https://github.com/cloudalchemy/ansible-pushgateway/pull/21) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] Update releaser.sh [\#20](https://github.com/cloudalchemy/ansible-pushgateway/pull/20) ([cloudalchemybot](https://github.com/cloudalchemybot))
