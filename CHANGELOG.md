@@ -1,9 +1,9 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
-
+## [0.2.1](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-12-21)
 **Merged pull requests:**
 
+- New prometheus/pushgateway upstream release! [\#27](https://github.com/cloudalchemy/ansible-pushgateway/pull/27) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] remove IRC link [\#26](https://github.com/cloudalchemy/ansible-pushgateway/pull/26) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - Replace node exporter by pushgateway in readme [\#25](https://github.com/cloudalchemy/ansible-pushgateway/pull/25) ([notFloran](https://github.com/notFloran))
 - \[REPO SYNC\] add declarative label sync; add autolabelling PRs [\#23](https://github.com/cloudalchemy/ansible-pushgateway/pull/23) ([cloudalchemybot](https://github.com/cloudalchemybot))
