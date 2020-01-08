@@ -1,5 +1,11 @@
 # Change Log
 
+## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
+
+**Merged pull requests:**
+
+- \[REPO SYNC\] use latest available python [\#29](https://github.com/cloudalchemy/ansible-pushgateway/pull/29) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
 ## [0.2.1](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2019-12-21)
 **Merged pull requests:**
 
