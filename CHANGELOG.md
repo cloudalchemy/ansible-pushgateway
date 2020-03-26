@@ -1,5 +1,12 @@
 # Change Log
 
+## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
+
+**Merged pull requests:**
+
+- \[REPO SYNC\] lock molecule to v2 [\#33](https://github.com/cloudalchemy/ansible-pushgateway/pull/33) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- New prometheus/pushgateway upstream release! [\#32](https://github.com/cloudalchemy/ansible-pushgateway/pull/32) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
 ## [0.2.2](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2020-01-28)
 **Merged pull requests:**
 
