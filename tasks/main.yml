@@ -9,21 +9,23 @@
     - "{{ ansible_distribution | lower }}.yml"
     - "{{ ansible_os_family | lower }}.yml"
   tags:
-    - always
+    - pushgateway_install
+    - pushgateway_configure
 
 - import_tasks: preflight.yml
   tags:
-    - always
+    - pushgateway_install
+    - pushgateway_configure
 
 - import_tasks: install.yml
   become: true
   tags:
-    - install
+    - pushgateway_install
 
 - import_tasks: configure.yml
   become: true
   tags:
-    - configure
+    - pushgateway_configure
 
 - name: Ensure pushgateway is enabled on boot
   become: true
