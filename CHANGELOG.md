@@ -4,6 +4,7 @@
 
 **Merged pull requests:**
 
+- \[REPO SYNC\] Add passlib as a test requirement [\#37](https://github.com/cloudalchemy/ansible-pushgateway/pull/37) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] lock molecule to v2 [\#33](https://github.com/cloudalchemy/ansible-pushgateway/pull/33) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - New prometheus/pushgateway upstream release! [\#32](https://github.com/cloudalchemy/ansible-pushgateway/pull/32) ([cloudalchemybot](https://github.com/cloudalchemybot))
 
