@@ -4,8 +4,8 @@
     file:
       path: "{{ pushgateway_persistence_dir }}"
       state: directory
-      owner: "root"
-      group: "root"
+      owner: "{{ pushgateway_system_user }}"
+      group: "{{ pushgateway_system_group }}"
       mode: 0755
 
   - name: Create persistence file
