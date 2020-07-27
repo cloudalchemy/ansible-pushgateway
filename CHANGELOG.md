@@ -1,9 +1,13 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/pushgateway)
+## [0.2.3](https://galaxy.ansible.com/cloudalchemy/pushgateway) (2020-07-27)
+**Fixed bugs:**
+
+- Invalid permissions of /var/lib/pushgateway/ [\#36](https://github.com/cloudalchemy/ansible-pushgateway/issues/36)
 
 **Merged pull requests:**
 
+- fix pushgateway\_persistence\_dir permissions [\#38](https://github.com/cloudalchemy/ansible-pushgateway/pull/38) ([ahmadalli](https://github.com/ahmadalli))
 - \[REPO SYNC\] Add passlib as a test requirement [\#37](https://github.com/cloudalchemy/ansible-pushgateway/pull/37) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] lock molecule to v2 [\#33](https://github.com/cloudalchemy/ansible-pushgateway/pull/33) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - New prometheus/pushgateway upstream release! [\#32](https://github.com/cloudalchemy/ansible-pushgateway/pull/32) ([cloudalchemybot](https://github.com/cloudalchemybot))
