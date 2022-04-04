@@ -27,6 +27,7 @@
     url: "https://github.com/prometheus/pushgateway/releases/download/v{{ pushgateway_version }}/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
     dest: "/tmp/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
     checksum: "sha256:{{ pushgateway_checksum }}"
+    mode: 0644
   register: _download_binary
   until: _download_binary is succeeded
   retries: 5
@@ -40,6 +41,7 @@
     src: "/tmp/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
     dest: "/tmp"
     creates: "/tmp/pushgateway-{{ pushgateway_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}/pushgateway"
+    mode: 0755
   delegate_to: localhost
   check_mode: false
 
