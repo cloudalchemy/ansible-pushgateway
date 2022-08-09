@@ -6,6 +6,5 @@ go_arch_map:
   armv7l: 'armv7'
   armv6l: 'armv6'
 
-pushgateway_persistence_dir: /var/lib/pushgateway
 pushgateway_system_group: "pushgateway"
 pushgateway_system_user: "{{ pushgateway_system_group }}"

@@ -4,6 +4,7 @@ pushgateway_web_listen_address: "0.0.0.0:9091"
 pushgateway_web_external_url: ""
 
 pushgateway_persistence: true
+pushgateway_persistence_dir: /var/lib/pushgateway
 
 pushgateway_config_flags_extra: {}
 # pushgateway_config_flags_extra:
