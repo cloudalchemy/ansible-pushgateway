@@ -14,7 +14,7 @@
 - name: Create the pushgateway user
   user:
     name: "{{ pushgateway_system_user }}"
-    groups: "{{ pushgateway_system_group }}"
+    group: "{{ pushgateway_system_group }}"
     append: true
     shell: /usr/sbin/nologin
     system: true
